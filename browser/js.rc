@@ -1,0 +1,2 @@
+SIMPLE_JSON_RPC	RCDATA "js/simple-jsonrpc-js.js"
+INIT_JRPS	RCDATA "js/init_jrpc.js"

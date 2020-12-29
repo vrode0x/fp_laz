@@ -1,0 +1,81 @@
+object Form1: TForm1
+  Left = 447
+  Height = 699
+  Top = 92
+  Width = 897
+  Caption = 'Form1'
+  ClientHeight = 699
+  ClientWidth = 897
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.1.0.0'
+  object pnlCtrls: TPanel
+    Left = 0
+    Height = 50
+    Top = 649
+    Width = 897
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 897
+    TabOrder = 0
+    object btnRequest: TButton
+      Left = 8
+      Height = 25
+      Top = 11
+      Width = 75
+      Caption = 'Request'
+      OnClick = btnRequestClick
+      TabOrder = 0
+    end
+    object btnRefresh: TButton
+      Left = 811
+      Height = 25
+      Top = 11
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Refresh'
+      OnClick = btnRefreshClick
+      TabOrder = 1
+    end
+    object btnRequestWait: TButton
+      Left = 85
+      Height = 25
+      Top = 11
+      Width = 88
+      Caption = 'RequestWait'
+      OnClick = btnRequestWaitClick
+      TabOrder = 2
+    end
+    object cmbFuncs: TComboBox
+      Left = 182
+      Height = 23
+      Top = 11
+      Width = 434
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'test_func [100]'
+      )
+      TabOrder = 3
+      Text = 'test_func [100]'
+    end
+    object btnNotifyWB: TButton
+      Left = 631
+      Height = 25
+      Top = 11
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Notify'
+      OnClick = btnNotifyWBClick
+      TabOrder = 4
+    end
+  end
+  object pnlWB: TPanel
+    Left = 0
+    Height = 649
+    Top = 0
+    Width = 897
+    Align = alClient
+    TabOrder = 1
+  end
+end

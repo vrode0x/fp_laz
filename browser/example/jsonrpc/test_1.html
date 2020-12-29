@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test Desktop WebView</title>
+  <script src="../../js/simple-jsonrpc-js.js"></script>
+  <script src="../../js/init_server.js"></script>
+</head>
+
+<body>
+  <h1>Test Desktop WebView</h1>
+  <button id="btn1" onclick="btn1Click();">Test Click</button>
+  <button id="btn2" onclick="test();">Test Click</button><br>
+  <a href="test_2.html">test_2.html</a><br>
+  <textarea id="tarea1" cols="100" rows="30"></textarea>
+
+  <script>
+    function btn1Click() {
+      test_eval('OK');
+    }
+
+    function test_eval(s) {
+      btn1.textContent = s;
+    }
+
+    function test(s) {
+      //__onReceiveJsonString("ddddd");
+      __jrpc.call('showMessage', ['OK', true, 100]).then(function(result) {
+        console.log(result);
+      });
+    }
+
+    __jrpc.on('test_func', function (s) {
+        tarea1.value = s;
+        btn1.textContent = s;
+        return 200;
+    });
+
+  </script>
+</body>
+
+</html>
+

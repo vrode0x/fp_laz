@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="vr_base"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value=".;..\inc"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Linking>
+        <Debugging>
+          <DebugInfoType Value="dsDwarf2Set"/>
+        </Debugging>
+      </Linking>
+    </CompilerOptions>
+    <Files Count="28">
+      <Item1>
+        <Filename Value="jedi.inc"/>
+        <Type Value="Include"/>
+      </Item1>
+      <Item2>
+        <Filename Value="vr_classes.pas"/>
+        <UnitName Value="vr_classes"/>
+      </Item2>
+      <Item3>
+        <Filename Value="vr_ctrl_utils.pas"/>
+        <UnitName Value="vr_ctrl_utils"/>
+      </Item3>
+      <Item4>
+        <Filename Value="vr_fpclasses.pas"/>
+        <UnitName Value="vr_fpclasses"/>
+      </Item4>
+      <Item5>
+        <Filename Value="vr_fpg.pas"/>
+        <UnitName Value="vr_fpg"/>
+      </Item5>
+      <Item6>
+        <Filename Value="vr_globals.pas"/>
+        <UnitName Value="vr_globals"/>
+      </Item6>
+      <Item7>
+        <Filename Value="vr_intfs.pas"/>
+        <UnitName Value="vr_intfs"/>
+      </Item7>
+      <Item8>
+        <Filename Value="vr_json_conf.pas"/>
+        <UnitName Value="vr_json_conf"/>
+      </Item8>
+      <Item9>
+        <Filename Value="vr_jsonrpc.pas"/>
+        <UnitName Value="vr_JsonRpc"/>
+      </Item9>
+      <Item10>
+        <Filename Value="vr_jsonrpcclasses.pas"/>
+        <UnitName Value="vr_JsonRpcClasses"/>
+      </Item10>
+      <Item11>
+        <Filename Value="vr_jsonutils.pas"/>
+        <UnitName Value="vr_JsonUtils"/>
+      </Item11>
+      <Item12>
+        <Filename Value="vr_process.pas"/>
+        <UnitName Value="vr_process"/>
+      </Item12>
+      <Item13>
+        <Filename Value="vr_promise.pas"/>
+        <UnitName Value="vr_promise"/>
+      </Item13>
+      <Item14>
+        <Filename Value="vr_sysutils.pas"/>
+        <UnitName Value="vr_SysUtils"/>
+      </Item14>
+      <Item15>
+        <Filename Value="vr_timer.pas"/>
+        <UnitName Value="vr_timer"/>
+      </Item15>
+      <Item16>
+        <Filename Value="vr_transport.pas"/>
+        <UnitName Value="vr_transport"/>
+      </Item16>
+      <Item17>
+        <Filename Value="vr_types.pas"/>
+        <UnitName Value="vr_types"/>
+      </Item17>
+      <Item18>
+        <Filename Value="vr_utils.pas"/>
+        <UnitName Value="vr_utils"/>
+      </Item18>
+      <Item19>
+        <Filename Value="vr_variant.pas"/>
+        <UnitName Value="vr_variant"/>
+      </Item19>
+      <Item20>
+        <Filename Value="vr_widestrings.pas"/>
+        <UnitName Value="vr_WideStrings"/>
+      </Item20>
+      <Item21>
+        <Filename Value="vr_winapi.pas"/>
+        <UnitName Value="vr_WinAPI"/>
+      </Item21>
+      <Item22>
+        <Filename Value="vr_xml_utils.pas"/>
+        <UnitName Value="vr_xml_utils"/>
+      </Item22>
+      <Item23>
+        <Filename Value="vr_zipper.pas"/>
+        <UnitName Value="vr_zipper"/>
+      </Item23>
+      <Item24>
+        <Filename Value="wb_mobile_app.pas"/>
+        <UnitName Value="wb_mobile_app"/>
+      </Item24>
+      <Item25>
+        <Filename Value="windows_compat.pas"/>
+        <UnitName Value="windows_compat"/>
+      </Item25>
+      <Item26>
+        <Filename Value="..\inc\vrode.inc"/>
+        <Type Value="Include"/>
+      </Item26>
+      <Item27>
+        <Filename Value="vr_app_utils.pas"/>
+        <UnitName Value="vr_app_utils"/>
+      </Item27>
+      <Item28>
+        <Filename Value="fp_laz_version.pas"/>
+        <UnitName Value="fp_laz_version"/>
+      </Item28>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>
